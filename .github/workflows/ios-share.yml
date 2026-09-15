@@ -124,7 +124,7 @@ jobs:
           xcode-version: latest-stable
 
       - name: Restore DerivedData cache
-        uses: actions/cache/restore@v6
+       uses: actions/cache/restore@v4
         with:
           path: DerivedData
           key: deriveddata-sim-${{ github.run_id }}
